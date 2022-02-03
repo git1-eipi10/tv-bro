@@ -23,9 +23,9 @@ class AdblockModel : ActiveModel() {
         const val ADBLOCK_LAST_UPDATE_LIST_KEY = "adblock_last_update"
         const val ADBLOCK_LIST_URL_KEY = "adblock_list_url"
 
-        const val DEFAULT_LIST_URL = "https://easylist.to/easylist/easylist.txt"
+        const val DEFAULT_LIST_URL = "https://raw.githubusercontent.com/git1-eipi10/tv-bro/master/adblock_list.txt"
         const val SERIALIZED_LIST_FILE = "adblock_ser.dat"
-        const val AUTO_UPDATE_INTERVAL_MINUTES = 60 * 24 * 30 //30 days
+        const val AUTO_UPDATE_INTERVAL_MINUTES = 60 * 24 // 1 day
     }
 
     private var prefs = TVBro.instance.getSharedPreferences(TVBro.MAIN_PREFS_NAME, Context.MODE_PRIVATE)
